@@ -19,6 +19,7 @@ console.log(str1.trim())
 const mobno = "9265367021"
 const last3digit = mobno.slice(-3)
 console.log(last3digit.padStart(mobno.length,"*"))
+console.log(str.padEnd(25,"."))
 
 const relexp = /[A-Z]/g;
 console.log(str.match(relexp))
