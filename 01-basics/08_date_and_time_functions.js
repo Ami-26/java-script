@@ -1,0 +1,22 @@
+let date = new Date()
+// console.log(date);
+// console.log(date.toString())
+// console.log(date.toDateString())
+// console.log(date.toISOString())
+// console.log(date.toJSON())
+// console.log(date.toLocaleDateString())
+// console.log(date.toLocaleString())
+// console.log(date.toLocaleTimeString())
+let mydate = new Date(2025,0,1,6,15)
+console.log(mydate.toDateString())
+console.log(mydate.toLocaleString())
+
+let mytime = Date.now()
+console.log(mytime)
+console.log(mydate.getTime())
+console.log(Math.floor(Date.now()/1000))
+
+let newdate = new Date()
+console.log(newdate)
+console.log(newdate.getDate())
+console.log(newdate.getMonth()+1)
