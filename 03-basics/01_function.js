@@ -13,17 +13,13 @@ myfunction()
 // }
 // console.log(add(3,6))
 
-
-
-
-
 // +++++ ADD TWO_NUMBER_FUNCTION WITH NO RETURN VALUE +++++
 
 function add1(num1,num2){
     console.log(num1+num2) 
 }
 
- add(3,6)
+  add(3,6)
 //  ++++ OR ++++
 console.log("sum of two number",add1(3,6)); // here we are not give RETURN value and then print like this "CONSOLE" then it is give like ==> "SUM OF TWO NUMBER : UNDEFINED"
 
