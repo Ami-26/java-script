@@ -34,5 +34,5 @@ function functionwitharray(anotherarray){
 }                
 // functionwitharray(myarray)
 // +++++++++++ OR ++++++++++++
-// FUNCTION WITHIN ARRAY
+// FUNCTION WITHIN ARRAY 
 functionwitharray([1000,2000,3000,4000])
