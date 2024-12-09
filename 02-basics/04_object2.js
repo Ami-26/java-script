@@ -69,3 +69,20 @@ console.log(Object.values(litobj))
 console.log(Object.entries(litobj))
 
 console.log(litobj.hasOwnProperty('isuserloggedin'))
+
+// OBJECT DE-STRUCTURE
+
+const course = {
+    coursename : "js_in_hindi",
+    courseprice : "free",
+    cousesource : "youtube"
+
+}
+
+const {courseprice : rate , cousesource : cs} = course
+console.log(rate);
+console.log(cs);
+
+
+console.log(course.coursename) // normally print element of an object.
+console.log(rate) // after performing object_de_structure print elemnt of an object.
