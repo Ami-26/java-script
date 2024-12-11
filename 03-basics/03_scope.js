@@ -1,16 +1,16 @@
 let a=10
-// const b=20
+const b=20
 var c=300
 
 if(true){
     let a=10
     const b=20
     var c=30
-    console.log("Inner variable :" , a)
+    // console.log("Inner variable :" , a)
 
 }
 console.log("Outer variable :",a)
-// console.log(b)
+console.log(b)
 console.log(c)
 
 // ++++++ Nesting_Function_Scope_concept +++++++++
