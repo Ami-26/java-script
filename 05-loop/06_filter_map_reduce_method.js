@@ -7,6 +7,7 @@
 // })
 // console.log(myarr);
 
+// +++++++++++++ FILTER_METHOD +++++++++++++++
 
 const arr = [1,2,3,4,5,6,7,8,9,10]
 
@@ -77,7 +78,58 @@ const book = [
 
 // myarr = book.filter((bk) => bk.publish >= 1995)
 
-myarr = book.filter((bk) => {
-     return bk.publish >= 1995 && bk.genre === "history"
-})
-console.log(myarr);
+// myarr = book.filter((bk) => {
+//      return bk.publish >= 1995 && bk.genre === "history"
+// })
+// console.log(myarr);
+
+// +++++++++ MAP_METHOD ++++++++++
+
+const numarr = [1,2,3,4,5,6,7,8,9,10]
+
+//const newnum = numarr.map((num) => num+10)
+
+//const newnum = numarr.map((num) => { return num+10}) // when we use scope means {} then we complusary use RETURN_KEYWORD..
+// console.log(newnum);
+
+// ++++++++ CHAINING_OF_METHODS ++++++++
+
+const newnum = numarr
+                .map((num) => num * 10)
+                .map((num) => num + 1)
+                .filter((num) => num >= 50)
+// console.log(newnum);
+
+// ++++++++++ REDUCE_METHOD ++++++++++
+
+const rarray = [1,2,3,4]
+
+ const newarr = rarray.reduce((acc , cval) => {return acc + cval},0)
+//  console.log(newarr)
+
+const shoppingcart = [
+    {
+        course : "js",
+        price : 2999
+    },
+    {
+        course : "cpp",
+        price : 999
+    },
+    {
+        course : "py",
+        price : 1999
+    },
+    {
+        course : "java",
+        price : 3999
+    },
+    {
+        course : "ai",
+        price : 9999
+    },
+]
+
+const total = shoppingcart.reduce((accval , item) => 
+    {return accval + item.price},0)
+console.log(total);
